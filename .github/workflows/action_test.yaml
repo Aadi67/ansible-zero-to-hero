@@ -1,7 +1,14 @@
 name: a simple first github action
-
 on: push
-
 jobs:
     first_job:
-        runs_on: ubuntu
+        runs_on: ubuntu-latest
+        steps:
+            - name: welcome message
+              run: echo "Welcome to your first git action segment"
+
+            - name: this are list of files
+              run: ls
+              
+            - name: this is your readme file
+              run: cat README.md
