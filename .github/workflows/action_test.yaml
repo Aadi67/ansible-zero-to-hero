@@ -1,0 +1,7 @@
+name: a simple first github action
+
+on: push
+
+jobs:
+    first_job:
+        runs_on: ubuntu
